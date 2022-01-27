@@ -1,0 +1,36 @@
+.feedback-form{
+    --offsetTop: -150%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    transition: transform 500ms ease-in;
+    font-size: 0.8rem;
+}
+
+@media (min-width:700px){
+    .feedback-form{
+        transform: translateY(var(--offsetTop));
+    }
+}
+
+textarea{
+    resize: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.feedback-form__buttons{
+    align-self: flex-end;
+}
+
+.cancel-button{
+    color: grey;
+}
+
+.submit-button{
+    color: blue;
+}
+
